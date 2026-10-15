@@ -1,0 +1,478 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f7fb;
+  color: #1f2937;
+}
+
+/* =========================
+   LOGIN
+========================= */
+
+.login-page {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(
+    135deg,
+    #667eea,
+    #764ba2
+  );
+}
+
+.login-card {
+  width: 400px;
+
+  background: white;
+
+  padding: 40px;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+.login-card h1 {
+  text-align: center;
+
+  margin-bottom: 8px;
+
+  color: #111827;
+}
+
+.login-subtitle {
+  text-align: center;
+
+  color: #6b7280;
+
+  margin-bottom: 30px;
+}
+
+/* =========================
+   FORM
+========================= */
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  color: #374151;
+}
+
+.form-group input {
+  width: 100%;
+
+  padding: 12px 14px;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 9px;
+
+  font-size: 15px;
+
+  outline: none;
+
+  transition: 0.2s;
+}
+
+.form-group input:focus {
+  border-color: #667eea;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(102, 126, 234, 0.15);
+}
+
+/* =========================
+   LOGIN BUTTON
+========================= */
+
+.login-button {
+  width: 100%;
+
+  padding: 13px;
+
+  border: none;
+
+  border-radius: 9px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #667eea,
+      #764ba2
+    );
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.login-button:hover {
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 8px 20px
+    rgba(102, 126, 234, 0.3);
+}
+
+/* =========================
+   DASHBOARD
+========================= */
+
+.dashboard {
+  min-height: 100vh;
+
+  padding: 35px;
+}
+
+.dashboard-container {
+  max-width: 1200px;
+
+  margin: auto;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.dashboard-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 30px;
+}
+
+.dashboard-title h1 {
+  font-size: 32px;
+
+  color: #111827;
+}
+
+.dashboard-title p {
+  margin-top: 6px;
+
+  color: #6b7280;
+}
+
+.header-actions {
+  display: flex;
+
+  gap: 10px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn {
+  border: none;
+
+  border-radius: 8px;
+
+  padding: 10px 17px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn-primary {
+  background: #667eea;
+
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #5568d9;
+}
+
+.btn-secondary {
+  background: #e5e7eb;
+
+  color: #374151;
+}
+
+.assignment-upload-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.assignment-file-input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.profile-picture-cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 150px;
+}
+
+.profile-picture-thumbnail {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-picture-placeholder {
+  color: #6b7280;
+  white-space: nowrap;
+}
+
+.btn-danger {
+  background: #fee2e2;
+
+  color: #dc2626;
+}
+
+.btn-danger:hover {
+  background: #fecaca;
+}
+
+.btn-edit {
+  background: #e0e7ff;
+
+  color: #4338ca;
+}
+
+/* =========================
+   FORM CARD
+========================= */
+
+.form-card {
+  background: white;
+
+  padding: 28px;
+
+  border-radius: 15px;
+
+  box-shadow:
+    0 5px 25px
+    rgba(0, 0, 0, 0.07);
+
+  margin-bottom: 30px;
+}
+
+.form-card h2 {
+  margin-bottom: 22px;
+
+  color: #111827;
+}
+
+.form-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 18px;
+}
+
+.form-actions {
+  margin-top: 20px;
+
+  display: flex;
+
+  gap: 10px;
+}
+
+/* =========================
+   MESSAGE
+========================= */
+
+.message {
+  margin-top: 15px;
+
+  margin-bottom: 15px;
+
+  padding: 10px 14px;
+
+  border-radius: 8px;
+
+  background: #ecfdf5;
+
+  color: #047857;
+
+  font-size: 14px;
+}
+
+/* =========================
+   TABLE
+========================= */
+
+.table-card {
+  background: white;
+
+  border-radius: 15px;
+
+  box-shadow:
+    0 5px 25px
+    rgba(0, 0, 0, 0.07);
+
+  overflow: hidden;
+}
+
+.table-header {
+  padding: 22px 25px;
+
+  border-bottom:
+    1px solid #e5e7eb;
+}
+
+.table-header h2 {
+  font-size: 20px;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.users-table {
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
+.users-table th {
+  text-align: left;
+
+  padding: 15px 20px;
+
+  background: #f9fafb;
+
+  color: #6b7280;
+
+  font-size: 13px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.5px;
+}
+
+.users-table td {
+  padding: 16px 20px;
+
+  border-top:
+    1px solid #f0f0f0;
+
+  font-size: 14px;
+}
+
+.users-table tr:hover {
+  background: #fafbff;
+}
+
+.username {
+  font-weight: 600;
+
+  color: #111827;
+}
+
+.email {
+  color: #667eea;
+}
+
+.actions {
+  display: flex;
+
+  gap: 8px;
+}
+
+.send-message-cell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 270px;
+}
+
+.send-message-cell input {
+  min-width: 0;
+  width: 100%;
+  padding: 9px 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.send-message-cell input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.15);
+}
+
+.send-message-cell .btn:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+  .dashboard {
+    padding: 20px;
+  }
+
+  .dashboard-header {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 20px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .login-card {
+    width: calc(100% - 30px);
+
+    padding: 30px;
+  }
+
+}
