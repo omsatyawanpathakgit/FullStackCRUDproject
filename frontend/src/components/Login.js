@@ -48,7 +48,7 @@ function Login({ onLogin }) {
 
       <div className="login-card">
 
-        <h1>MERN User CRUD (built by Jinal and Om)</h1>
+        <h1>MERN User CRUD (built by Jinal , Om, Sahil)</h1>
 
         <p className="login-subtitle">
           Sign in to manage your users
